@@ -92,22 +92,24 @@ const Home = () => {
                 html_url={user.html_url}
               />
             </FloatElement>
-            <FloatElement>
-              <Repositories>
-                {repos.map((repo: Repo) => {
+            {repos.length
+              ? <FloatElement>
+                <Repositories>
+                  {repos.map((repo: Repo) => {
                   return (
                     <Repository
-                      key={repo.name}
-                      name={repo.name}
-                      description={repo.description}
-                      language={repo.language}
-                      stargazers_count={repo.stargazers_count}
-                      html_url={repo.html_url}
-                    />
+                    key={repo.name}
+                    name={repo.name}
+                    description={repo.description}
+                    language={repo.language}
+                    stargazers_count={repo.stargazers_count}
+                    html_url={repo.html_url}
+                  />
                   );
                 })}
-              </Repositories>
-            </FloatElement>
+                </Repositories>
+              </FloatElement>
+              : null}
           </UserContent>
         ) : (
           <div>
