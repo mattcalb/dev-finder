@@ -8,11 +8,11 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Title = styled.h1`
-  font-size: 40px;
+  font-size: 30px;
   color: ${props => props.theme.colors.text};
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 20px;
+  font-size: 18px;
   color: ${props => props.theme.colors.text};
 `;

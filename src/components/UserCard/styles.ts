@@ -7,7 +7,7 @@ export const Card = styled.div`
     width: 35vw;
     max-width: 600px;
     height: fit-content;
-    min-height: 55vh;
+    min-height: 45vh;
     border-radius: 5px;
     margin: 0 auto;
     background-color: ${props => props.theme.colors.primary};
@@ -27,22 +27,22 @@ export const Card = styled.div`
 
 export const ProfilePicture = styled.img`
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     margin: 0 0 10px 0;
 `;
 
 export const Name = styled.h2`
-    font-size: 20px;
+    font-size: 18px;
 `;
 
 export const Login = styled.p`
-    font-size: 18px;
+    font-size: 16px;
     margin: 5px 0 5px;
 `;
 
 export const PublicRepositories = styled.span`
-    font-size: 16px
+    font-size: 15px
 `;
 
 export const Bio = styled.p`
@@ -71,7 +71,7 @@ export const GitHubLink = styled.a`
     padding: 10px;
     margin-top: 10px;
     width: 150px;
-
+    font-size: 15px;
     &:hover {
         background-color: ${props => shade(0.1, props.theme.colors.secundary)};
     }

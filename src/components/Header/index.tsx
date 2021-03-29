@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     return (
         <>
             <HeaderContainer>
-                <Title>dev-Finder<Code size={50}/></Title>
+                <Title>dev-Finder<Code size={35}/></Title>
                 <Subtitle>Your app to search for developers</Subtitle>
                 <Switch
                     onChange={toggleTheme}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
 import UserCard from "../../components/UserCard";
+import { Github } from '@styled-icons/remix-line/Github';
 
 import { User } from "../../components/UserCard/index";
 import Repository, { Repo } from "../../components/RepositoryCard/index";
@@ -17,6 +18,8 @@ import {
   SubmitButton,
   UserContent,
   Repositories,
+  Footer,
+  Link,
 } from "./styles";
 
 import background from "../../assets/Pair programming-rafiki.svg";
@@ -120,6 +123,9 @@ const Home = () => {
           </div>
         )}
       </Content>
+      <Footer>
+          <Link href="https://github.com/mattcalb/dev-finder"><Github size={35}></Github></Link>
+      </Footer>
     </>
   );
 };

@@ -11,7 +11,7 @@ export const TextInputField = styled.input`
         : shade(0.1, props.theme.colors.background)};
     color: ${(props) => props.theme.colors.text};
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 5px;
     border: none;
     padding: 10px;

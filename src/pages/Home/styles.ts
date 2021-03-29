@@ -63,8 +63,8 @@ export const Repositories = styled.div`
     width: 35vw;
     max-width: 600px;
     margin: 0 auto;
-    height: 45vh;
-    min-height: 500px;
+    height: 40vh;
+    min-height: 450px;
     overflow-y: auto;
     padding: 5px;
     background-color: ${props => props.theme.colors.primary};
@@ -112,4 +112,25 @@ export const FreepikLink = styled.a`
     display: block;
     margin: 0 auto;
     width: fit-content;
+`;
+
+export const Footer = styled.footer`
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+`;
+
+export const Link = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    height: 50px;
+    background-color: ${props => props.theme.colors.primary};
+    padding: 10px;
+    border-radius: 5px;
+    color: ${props => props.theme.colors.secundary}; 
+    text-decoration: none;
 `;
